@@ -8,13 +8,14 @@
     "@types/express": "^5.0.6"
   },
   "scripts": {
-   "start": "bun run index.ts",
-   "dev" : "bun --watch run index.ts"
+    "start": "bun run index.ts",
+    "dev": "bun --watch run index.ts"
   },
   "peerDependencies": {
     "typescript": "^5"
   },
   "dependencies": {
+    "dotenv": "^17.2.3",
     "express": "^5.2.1"
   }
 }
