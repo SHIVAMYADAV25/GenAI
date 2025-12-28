@@ -1,6 +1,6 @@
 import { FaArrowUp } from "react-icons/fa";
 import { useForm } from "react-hook-form";
-import type { KeyboardEvent } from "react";
+import { useRef, useState, type KeyboardEvent } from "react";
 
 /**
  * Shape of the form data handled by react-hook-form
@@ -9,7 +9,16 @@ type FormData = {
   prompt: string;
 };
 
+type chatResponse = {
+    message : string;
+}
+
 const Chatbot = () => {
+
+    const [messages , setMessages] = useState()
+
+  // can store value which will not re-render
+  const conversationId = useRef(crypto.randomUUID());
   /**
    * useForm manages form state and validation
    * mode: "onChange" ensures validation runs on every keystroke
