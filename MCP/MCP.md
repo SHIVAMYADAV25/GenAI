@@ -581,3 +581,6 @@ And perhaps the most important thing I learned is that building one MCP server i
 The more interesting engineering challenge starts when you have **many tools, many servers, multiple users, security requirements, and production-scale infrastructure**.
 
 That is where MCP architecture becomes much more interesting.
+
+
+### https://app.eraser.io/workspace/KtoftucjnbC3fj6LbR0o
